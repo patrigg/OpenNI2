@@ -84,7 +84,8 @@ def calc_jobs_number():
         cores = int(txt)
     except:
         pass
-       
+
+    cores = 4       
     return str(cores * 2)
 
 # Create installer

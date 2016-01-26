@@ -41,7 +41,7 @@ else:
 javaSrc = os.path.join('..', '..', 'Wrappers', 'java', 'OpenNI.java', 'src', 'org', 'openni')
 
 # workaround a strange linux behavior where you must pass the list of files
-cmd = [javaDocExe, '-d', 'java']
+cmd = [javaDocExe, '-d', 'java', '-Xdoclint:none']
 for root, dirs, files in os.walk(javaSrc):
     for file in files:
         cmd.append(os.path.join(root, file))
